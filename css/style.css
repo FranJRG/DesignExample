@@ -1,0 +1,29 @@
+.container {
+    background-color: #f8f9fa; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.car-container {
+    margin-top: 20px;
+}
+
+.row{
+    display: gid;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+#car {
+    max-width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#explicationVideo {
+    margin-top: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}

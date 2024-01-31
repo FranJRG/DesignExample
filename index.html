@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./img/LOGO.png"
+              class="me-2"
+              height="30"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+            <small>Market Car</small>
+          </a>
+          <button id="playAudioButton" type="button" class="btn btn-outline-secondary" onclick="playAudio()">Make it sound!</button>
+        </div>
+    </nav>
+
+    
+    <div class="container text-center my-5">
+        <h1 class="display-4" id="titleFirst">Feel Safe While Driving with MarketCar!</h1><img src="./img/LOGO.png" class="me-2"  height="80" alt="MDB Logo" loading="lazy"/>
+        <h1 class="display-4" id="titleVideo" hidden>This is the creation of our logo!</h1><img hidden src="./img/LOGO.png" class="me-2"  height="80" alt="MDB Logo" loading="lazy"/>
+        <div class="car-container">
+            <img src="./img/coche.jpg" id="car" class="img-fluid" alt="Car Image" >
+        </div>
+        <video id="explicationVideo" hidden height="400" width="600" src="./video/CreationLogo.mkv" controls>
+        </video>
+    </div>
+
+    <div class="container text-center my-5">
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./img/ibiza.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">New seat Ibiza</h5>
+                  <p class="card-text">Enjoy the road while you drive with the new Seat Ibiza fresh from the factory </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./img/hyundai.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">New Hyundai</h5>
+                  <p class="card-text">If you like adrenaline, we have the best car for these, enjoy the new Hyundai.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./img/honda.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Honda</h5>
+                  <p class="card-text">Honda!,The best cart if you are a lover of the cars, fast, unique and safe.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./img/peugeot408.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Peugeot 408</h5>
+                  <p class="card-text">The new boy of peugeot! The 408, the car of the new era.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./img/mercedes.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Mercedes</h5>
+                  <p class="card-text">Mercedes...,like always give you a good road, nothin more to add...</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./img/renault.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Renault</h5>
+                  <p class="card-text">Renault the last model!, a car that make you feel like home</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><button id="videoButton" onclick="playVideo()" class="nav-link px-2 text-muted">How we create our logo</button></li>
+          </ul>
+          <p class="text-center text-muted">© 2022 Company, Inc</p>
+        </footer>
+    </div>
+
+
+    <audio id="backgroundAudio" hidden controls>
+        <source src="./audio/EditedAudio.mp3" type="audio/mp3">
+    </audio>    
+    <script src="/js/actions.js"></script>
+</body>
+</html>
